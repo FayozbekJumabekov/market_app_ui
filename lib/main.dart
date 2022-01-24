@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:market_app_ui/shop_cart.dart';
 
 import 'home_page.dart';
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       routes: {
 
-        HomePage.id:(context)=>HomePage()
+        HomePage.id:(context)=>HomePage(),
+        ShoppingCart.id:(context)=>ShoppingCart([]),
       },
 
     );
